@@ -1,525 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Yassine TERRO, Mechatronics Engineer, Robotics, Embedded Systems, Portfolio" />
-    <meta name="description" content="Welcome to Yassine TERRO's Portfolio. Mechatronics Engineer specializing in Robotics and Embedded Systems." />
+    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio | Yassine TERRO</title>
-
-    <!-- Inline CSS for Modifications -->
-    <style>
-        /* General Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #24292e;
-            padding: 20px;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        header a.logo {
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #f4f4f4;
-        }
-
-        header .navbar ul {
-            display: flex;
-            list-style: none;
-        }
-
-        header .navbar ul li {
-            margin: 0 15px;
-        }
-
-        header .navbar ul li a {
-            color: #f4f4f4;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        header .navbar ul li a.active, 
-        header .navbar ul li a:hover {
-            color: #00d9ff;
-        }
-
-        #menu {
-            display: none;
-        }
-
-        section {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .heading {
-            font-size: 2.5rem;
-            color: #24292e;
-            margin-bottom: 40px;
-        }
-
-        .heading span {
-            color: #00d9ff;
-        }
-
-        .home .content {
-            margin-top: 100px;
-            text-align: left;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .home .content h2 {
-            font-size: 2.5rem;
-            color: #24292e;
-        }
-
-        .home .content h2 span {
-            color: #00d9ff;
-        }
-
-        .home .content p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            color: #666;
-        }
-
-        .home .content a.btn {
-            background-color: #00d9ff;
-            padding: 10px 20px;
-            color: #fff;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 1rem;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .home .content a.btn:hover {
-            background-color: #007ca3;
-        }
-
-        .home .socials {
-            margin-top: 20px;
-        }
-
-        .home .socials ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            justify-content: center;
-        }
-
-        .home .socials ul li {
-            margin: 0 10px;
-        }
-
-        .home .socials ul li a {
-            color: #24292e;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .home .socials ul li a:hover {
-            color: #00d9ff;
-        }
-
-        .home .image img {
-            max-width: 100%;
-            margin-top: 20px;
-        }
-
-        .about, .skills, .projects, .experience, .contact {
-            background-color: #fff;
-            margin: 20px auto;
-            padding: 60px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .about .content h3 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .about .content p {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .about .box-container {
-            margin-top: 20px;
-        }
-
-        .about .box-container .box {
-            text-align: left;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        .skills .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .skills .row {
-            margin: 20px 0;
-        }
-
-        .projects .box-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .projects .box {
-            background-color: #f4f4f4;
-            padding: 20px;
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 300px;
-            text-align: left;
-        }
-
-        .projects .box img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .projects .box h3 {
-            font-size: 1.5rem;
-            color: #24292e;
-            margin-top: 15px;
-        }
-
-        .projects .box p {
-            font-size: 1rem;
-            color: #666;
-            margin: 15px 0;
-        }
-
-        .projects .box .btns a {
-            text-decoration: none;
-            font-size: 1rem;
-            color: #00d9ff;
-            margin-right: 10px;
-        }
-
-        .projects .box .btns a:hover {
-            text-decoration: underline;
-        }
-
-        .experience .timeline {
-            position: relative;
-            margin: 20px 0;
-        }
-
-        .experience .timeline .container {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-            position: relative;
-        }
-
-        .experience .timeline .container.right {
-            justify-content: flex-end;
-            text-align: right;
-        }
-
-        .experience .timeline .container .content {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 500px;
-        }
-
-        .experience .timeline .container .content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #24292e;
-        }
-
-        .experience .timeline .container .content p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        .contact .container {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .contact .image-box img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .contact .content {
-            max-width: 600px;
-            margin: 20px 0;
-        }
-
-        .contact form {
-            width: 100%;
-        }
-
-        .contact form .form-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .contact form .form-group .field, .contact form .form-group .message {
-            flex: 1;
-            position: relative;
-        }
-
-        .contact form .form-group input, .contact form .form-group textarea {
-            width: 100%;
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-        }
-
-        .contact form .form-group input::placeholder, .contact form .form-group textarea::placeholder {
-            color: #999;
-        }
-
-        .contact form .form-group input:focus, .contact form .form-group textarea:focus {
-            border-color: #00d9ff;
-            outline: none;
-        }
-
-        .contact form .form-group .message textarea {
-            min-height: 150px;
-            border-radius: 10px;
-        }
-
-        .contact form button {
-            background-color: #00d9ff;
-            padding: 10px 20px;
-            color: #fff;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact form button:hover {
-            background-color: #007ca3;
-        }
-
-        footer {
-            background: #24292e;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #00d9ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Portfolio | Jigar Sable</title>
 </head>
+<body oncontextmenu="return false">
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="#" class="logo"><i class="fas fa-robot"></i> Yassine TERRO</a>
-        <div class="navbar">
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-        <div id="menu"><i class="fas fa-bars"></i></div>
-    </header>
+        </nav>
+</header>
+<!-- navbar ends -->
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="content">
-            <h2>Welcome to <span>Yassine TERRO's</span> Portfolio</h2>
-            <p>Mechatronics Engineer specializing in Robotics, Embedded Systems, and Automation. Passionate about designing and developing cutting-edge robotic solutions.</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
-        <div class="socials">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/yassine-terro-7326a8220?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkanpveoUTKK8UpWEI3RLeg%3D%3D" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/Yassineterro" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </div>
-        <a href="" class="btn-rounded-white">Télécharger le CV</a>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        <div class="content">
-            <h3>Mechatronics Engineer | Robotics Expert</h3>
-            <p>I am Yassine TERRO, a Mechatronics Engineer with a deep passion for robotics, embedded systems, and automation. My expertise lies in creating innovative solutions that integrate hardware and software seamlessly, transforming ideas into reality.</p>
-        </div>
-    </section>
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="container">
-            <div class="row">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Robotics Engineering</li>
-                    <li>Embedded Systems Design</li>
-                    <li>Automation & Control Systems</li>
-                    <li>Programming (C/C++, Python, MATLAB)</li>
-                    <li>CAD Design (SolidWorks, AutoCAD)</li>
-                </ul>
-            </div>
-            <div class="row">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>ROS (Robot Operating System)</li>
-                    <li>Arduino, Raspberry Pi</li>
-                    <li>PCB Design & Fabrication</li>
-                    <li>Machine Learning</li>
-                    <li>3D Printing & Prototyping</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div class="content">
+    <h2>Hi There,<br/> I'm Jigar <span>Sable</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/jigarsable.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li>
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
+</section>
+<!-- hero section ends -->
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Jigar</h3>
+        <span class="tag">Full Stack Developer</span>
+        
+        <p>I am a Full-Stack developer based in Pune, India. 
+          I am an Information Technology undergraduate from SPPU.
+          I am very passionate about improving my coding skills & developing applications & websites.
+          I build WebApps and Websites using MERN Stack.
+          Working for myself to improve my skills.
+          Love to build Full-Stack clones. </p>
+        
         <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
             <div class="box">
-                <img src="./assets/images/project1.png" alt="Autonomous Robot">
-                <h3>Autonomous Robot</h3>
-                <p>Designed and developed an autonomous robot capable of navigating through complex environments using advanced sensors and algorithms.</p>
-                <div class="btns">
-                    <a href="#">View Details</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="./assets/images/project2.png" alt="Smart Home System">
-                <h3>Smart Home System</h3>
-                <p>Created a smart home automation system integrating IoT devices, allowing remote control and monitoring of household appliances.</p>
-                <div class="btns">
-                    <a href="#">View Details</a>
-                    <a href="#">GitHub</a>
-                </div>
+              <p><span> email : </span> jigarsable21@gmail.com</p>
+              <p><span> place : </span> Pune, India - 412206</p>
             </div>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <h2 class="heading">My <span>Experience</span></h2>
-        <div class="timeline">
-            <div class="container">
-                <div class="content">
-                    <h3>Robotics Engineer | Tech Solutions Inc.</h3>
-                    <p>Developed and implemented robotics systems for industrial automation, enhancing productivity and efficiency across various sectors.</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h3>Embedded Systems Developer | Innovatech</h3>
-                    <p>Engineered embedded solutions for consumer electronics, focusing on optimizing performance and energy efficiency.</p>
-                </div>
-            </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <div class="container">
-            <div class="image-box">
-                <img src="./assets/images/contact-image.png" alt="Contact Yassine TERRO">
-            </div>
-            <div class="content">
-                <p>If you have any questions or would like to discuss a potential project, feel free to reach out. I'm always open to new opportunities and collaborations.</p>
-                <form action="#">
-                    <div class="form-group">
-                        <div class="field">
-                            <input type="text" placeholder="Your Name">
-                        </div>
-                        <div class="field">
-                            <input type="email" placeholder="Your Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="message">
-                            <textarea placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
         </div>
-    </section>
+        <div class="content">
+        <h3>Bachelor of Engineering in Information Technology</h3>
+        <p>Zeal College of engineering and research | SPPU</p>
+        <h4>2020-2024 | Pursuing</h4>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 <a href="/">Yassine TERRO</a>. All Rights Reserved.</p>
-    </footer>
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>HSC Science | Informatic Practices</h3>
+      <p>Shri  L. G. Haria Multipurpose School | CBSE</p>
+      <h4>2018-2020 | Completed</h4>
+      </div>
+    </div>
 
-    <!-- Custom JS -->
-    <script src="./assets/js/script.js"></script>
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section>
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Self Employed</h2>
+        </div>
+        <div class="desc">
+            <h3>Full Stack Developer</h3>
+            <p>Oct 2021 - present</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Mapstreak Flyseas</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Developer | Internship</h3>
+            <p>June 2021 - Dec 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Website Developer | Internship</h3>
+            <p>May 2021 - June 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Mobile Application Developer | Internship</h3>
+            <p>April 2021 - May 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Frshr Technologies</h2>
+        </div>
+        <div class="desc">
+            <h3>Wordpress Developer | Internship</h3>
+            <p>April 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>WonderingBlog</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Development & SEO | Internship</h3>
+            <p>March 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section>
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Jigar's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>jigarsable21@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Pune, India-412206</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/jigar-sable" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/jigar-sable" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:jigarsable21@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
 </body>
-
 </html>
