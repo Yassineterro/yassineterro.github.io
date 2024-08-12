@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Yassine TERRO, Mechatronics Engineer, Robotics, Embedded Systems, Portfolio" />
-    <meta name="description" content="Portfolio of Yassine TERRO, a Mechatronics Engineer specializing in Robotics, Embedded Systems, and Automation." />
-    <title>Yassine TERRO | Mechatronics Engineer Portfolio</title>
-
+    <meta name="description" content="Welcome to Yassine TERRO's Portfolio. Mechatronics Engineer specializing in Robotics and Embedded Systems." />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio | Yassine TERRO</title>
 
     <!-- Inline CSS for Modifications -->
     <style>
@@ -64,37 +64,13 @@
             font-size: 16px;
         }
 
-        header .navbar ul li a.active,
+        header .navbar ul li a.active, 
         header .navbar ul li a:hover {
             color: #00d9ff;
         }
 
         #menu {
             display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #f4f4f4;
-        }
-
-        @media (max-width: 768px) {
-            .navbar ul {
-                flex-direction: column;
-                background: #24292e;
-                position: fixed;
-                top: 70px;
-                right: 0;
-                width: 50%;
-                height: calc(100% - 70px);
-                display: none;
-            }
-
-            .navbar ul.active {
-                display: flex;
-            }
-
-            #menu {
-                display: block;
-            }
         }
 
         section {
@@ -180,29 +156,7 @@
             margin-top: 20px;
         }
 
-        .home .btn-rounded-white {
-            margin-top: 30px;
-            display: inline-block;
-            padding: 10px 25px;
-            border-radius: 25px;
-            background-color: #fff;
-            color: #00d9ff;
-            text-decoration: none;
-            font-size: 1rem;
-            border: 2px solid #00d9ff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .home .btn-rounded-white:hover {
-            background-color: #00d9ff;
-            color: #fff;
-        }
-
-        .about,
-        .skills,
-        .projects,
-        .experience,
-        .contact {
+        .about, .skills, .projects, .experience, .contact {
             background-color: #fff;
             margin: 20px auto;
             padding: 60px 20px;
@@ -210,16 +164,218 @@
             border-radius: 10px;
         }
 
-        /* Other sections remain unchanged */
+        .about .content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about .content p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .about .box-container {
+            margin-top: 20px;
+        }
+
+        .about .box-container .box {
+            text-align: left;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .skills .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skills .row {
+            margin: 20px 0;
+        }
+
+        .projects .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .projects .box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .projects .box img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .projects .box h3 {
+            font-size: 1.5rem;
+            color: #24292e;
+            margin-top: 15px;
+        }
+
+        .projects .box p {
+            font-size: 1rem;
+            color: #666;
+            margin: 15px 0;
+        }
+
+        .projects .box .btns a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #00d9ff;
+            margin-right: 10px;
+        }
+
+        .projects .box .btns a:hover {
+            text-decoration: underline;
+        }
+
+        .experience .timeline {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .experience .timeline .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .experience .timeline .container.right {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .experience .timeline .container .content {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+
+        .experience .timeline .container .content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #24292e;
+        }
+
+        .experience .timeline .container .content p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact .image-box img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact .content {
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .contact form {
+            width: 100%;
+        }
+
+        .contact form .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact form .form-group .field, .contact form .form-group .message {
+            flex: 1;
+            position: relative;
+        }
+
+        .contact form .form-group input, .contact form .form-group textarea {
+            width: 100%;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+
+        .contact form .form-group input::placeholder, .contact form .form-group textarea::placeholder {
+            color: #999;
+        }
+
+        .contact form .form-group input:focus, .contact form .form-group textarea:focus {
+            border-color: #00d9ff;
+            outline: none;
+        }
+
+        .contact form .form-group .message textarea {
+            min-height: 150px;
+            border-radius: 10px;
+        }
+
+        .contact form button {
+            background-color: #00d9ff;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #007ca3;
+        }
+
+        footer {
+            background: #24292e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <a href="#" class="logo" aria-label="Logo"><i class="fas fa-robot"></i> Yassine TERRO</a>
-        <div id="menu" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></div>
-        <nav class="navbar">
+        <a href="#" class="logo"><i class="fas fa-robot"></i> Yassine TERRO</a>
+        <div class="navbar">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -228,7 +384,8 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+        <div id="menu"><i class="fas fa-bars"></i></div>
     </header>
 
     <!-- Home Section -->
@@ -240,28 +397,129 @@
         </div>
         <div class="socials">
             <ul>
-                <li><a href="https://www.linkedin.com/in/yassine-terro-7326a8220" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/Yassineterro" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yassine-terro-7326a8220?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkanpveoUTKK8UpWEI3RLeg%3D%3D" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Yassineterro" target="_blank"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
-        <a href="./assets/images/CV.pdf" download class="btn-rounded-white" aria-label="Download CV">Download CV</a>
+        <a href="assets/images/CV" class="btn-rounded-white">Télécharger le CV</a>
     </section>
 
-    <!-- About, Skills, Projects, Experience, Contact Sections Unchanged -->
-    <!-- Footer Section -->
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="content">
+            <h3>Mechatronics Engineer | Robotics Expert</h3>
+            <p>I am Yassine TERRO, a Mechatronics Engineer with a deep passion for robotics, embedded systems, and automation. My expertise lies in creating innovative solutions that integrate hardware and software seamlessly, transforming ideas into reality.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="container">
+            <div class="row">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Robotics Engineering</li>
+                    <li>Embedded Systems Design</li>
+                    <li>Automation & Control Systems</li>
+                    <li>Programming (C/C++, Python, MATLAB)</li>
+                    <li>CAD Design (SolidWorks, AutoCAD)</li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>ROS (Robot Operating System)</li>
+                    <li>Arduino, Raspberry Pi</li>
+                    <li>PCB Design & Fabrication</li>
+                    <li>Machine Learning</li>
+                    <li>3D Printing & Prototyping</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="./assets/images/project1.png" alt="Autonomous Robot">
+                <h3>Autonomous Robot</h3>
+                <p>Designed and developed an autonomous robot capable of navigating through complex environments using advanced sensors and algorithms.</p>
+                <div class="btns">
+                    <a href="#">View Details</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./assets/images/project2.png" alt="Smart Home System">
+                <h3>Smart Home System</h3>
+                <p>Created a smart home automation system integrating IoT devices, allowing remote control and monitoring of household appliances.</p>
+                <div class="btns">
+                    <a href="#">View Details</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+        <div class="timeline">
+            <div class="container">
+                <div class="content">
+                    <h3>Robotics Engineer | Tech Solutions Inc.</h3>
+                    <p>Developed and implemented robotics systems for industrial automation, enhancing productivity and efficiency across various sectors.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>Embedded Systems Developer | Innovatech</h3>
+                    <p>Engineered embedded solutions for consumer electronics, focusing on optimizing performance and energy efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="container">
+            <div class="image-box">
+                <img src="./assets/images/contact-image.png" alt="Contact Yassine TERRO">
+            </div>
+            <div class="content">
+                <p>If you have any questions or would like to discuss a potential project, feel free to reach out. I'm always open to new opportunities and collaborations.</p>
+                <form action="#">
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="message">
+                            <textarea placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 <a href="/">Yassine TERRO</a>. All Rights Reserved.</p>
     </footer>
 
-    <!-- Custom JS for Mobile Menu -->
-    <script>
-        const menu = document.getElementById('menu');
-        const navbar = document.querySelector('.navbar ul');
-
-        menu.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-    </script>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
